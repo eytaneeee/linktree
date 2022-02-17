@@ -43,7 +43,7 @@ nav > div {
 article {
     grid-column-start: 2;
     grid-row-start: 1;
-    background-image: url(../Assets/245134512_565957084630001_8751211565321026054_n.jpg);
+    background-image: url(Assets/245134512_565957084630001_8751211565321026054_n.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -64,7 +64,7 @@ article {
 
 @media only screen and (min-width: 800px) {
     article {
-        background-image: url(../Assets/fpstd_optimized.jpg);
+        background-image: url(Assets/fpstd_optimized.jpg);
     }
 }
 
