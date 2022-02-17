@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-weight: 300;
+}
+
+.container {
+    display: grid;
+    gap: 0px;
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: 100vh;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        display: grid;
+        grid-template-rows: 20vh 80vh;
+        grid-template-columns: 1fr;
+    }
+}
+
+nav {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 3s;
+}
+
+nav > div {
+    padding: 30px;
+}
+
+#white-under {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+}
+
+article {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    background-image: url(../Assets/245134512_565957084630001_8751211565321026054_n.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 800px) {
+    nav {
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+    article {
+        grid-row-start: 2;
+        grid-column-start: 1;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    article {
+        background-image: url(../Assets/fpstd_optimized.jpg);
+    }
+}
+
+#linkbox {
+    padding: 0px;
+    border-radius: 25px;
+    border: 1px solid rgba(173, 173, 173, 0.0);
+    border-bottom: 1px solid rgba(75, 74, 74, 0.0)
+    ;
+    border-right: 1px solid rgba(75, 74, 74, 0.0);
+    backdrop-filter: blur(0px);
+    transition: all 2s;
+    box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.0);
+}
+
+#linkbox:hover {
+    padding: 50px 100px 50px 100px;
+    border-radius: 25px;
+    border: 1px solid rgba(173, 173, 173, 0.507);
+    border-bottom: 1px solid rgba(75, 74, 74, 0.507)
+    ;
+    border-right: 1px solid rgba(75, 74, 74, 0.37);
+    backdrop-filter: blur(25px);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 800px) {
+    #linkbox {
+        padding: 50px;
+        border-radius: 25px;
+        border: 1px solid rgba(173, 173, 173, 0.507);
+        border-bottom: 1px solid rgba(75, 74, 74, 0.507)
+        ;
+        border-right: 1px solid rgba(75, 74, 74, 0.37);
+        backdrop-filter: blur(25px);
+    }
+
+    #linkbox:hover {
+        padding: 50px
+    }
+}
+
+.link {
+    font-family: 'Work Sans';
+    font-weight: 700;
+    font-size: 200%;
+    border: 5px solid black;
+    border-radius: 2px;
+    margin: 10px;
+    padding: 10px;
+    transition: all 500ms;
+    width: 200px;
+    cursor: zoom-in;
+    user-select: none;
+    background-color: rgba(71, 71, 71, 0.1);
+}
+
+.link:hover {
+    font-size: 220%;
+    border: 2px dotted rgba(250, 235, 215, 0);
+    color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* .sidebar {
+} */
+
+.sidebar > div {
+    font-size: 360%;
+    color: white;
+    line-height: 130%;
+    transition: all 2s;
+}
+
+/* .sidebar:hover #replace {
+    display: none;
+}
+
+.sidebar:hover #welcome::after {
+    content: 'See You Soon !';
+} */
+
+/* Bye Bye */
+.sidebar > p {
+    color: black;
+    font-size: 360%;
+    font-weight: 900;
+}
+
+.strong {
+    font-weight: 900;
+}
+
+.small {
+    font-size: 30%;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 800px) {
+    nav {
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sidebar > div {
+        font-size: 250%;
+        text-align: center;
+        font-weight: 300;
+        line-height: normal;
+    }
+}
+/* body {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+} */
+
+.link-container:hover + nav div #replace{
+    display: none;
+}
+
+.link-container:hover + nav div::after{
+    content: 'See you soon !';
+}
