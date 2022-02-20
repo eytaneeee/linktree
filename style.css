@@ -43,7 +43,7 @@ nav > div {
 article {
     grid-column-start: 2;
     grid-row-start: 1;
-    background-image: url(245134512_565957084630001_8751211565321026054_n.jpg);
+    background-image: url(Assets/245134512_565957084630001_8751211565321026054_n.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
@@ -64,7 +64,7 @@ article {
 
 @media only screen and (min-width: 800px) {
     article {
-        background-image: url(fpstd_optimized.jpg);
+        background-image: url(Assets/fpstd_optimized.jpg);
     }
 }
 
@@ -125,8 +125,8 @@ article {
 .link:hover {
     font-size: 220%;
     border: 2px dotted rgba(250, 235, 215, 0);
-    color: antiquewhite;
-    background-color: rgba(0, 0, 0, 0);
+    /* color: antiquewhite;
+    background-color: rgba(0, 0, 0, 0); */
 }
 
 /* .sidebar {
@@ -199,4 +199,35 @@ h6 {
 
 .link-container:hover + nav div::after{
     content: 'See you soon !';
+}
+
+.ln:hover {
+    background: -webkit-linear-gradient(45deg,#0077b5 0%, white 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.inst:hover {
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.twt:hover {
+    background: -webkit-linear-gradient(45deg, #66757f, #00ACEE, #36D8FF, #f5f8fa, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.fb:hover {
+    background: -webkit-linear-gradient(45deg, #0243ce, #FFFFFF 120%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bh:hover {
+    background: -webkit-linear-gradient(45deg, #000f30, #FFFFFF 120%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.ml:hover {
+    background: -webkit-linear-gradient(45deg, #4285f4, #34a853, #fbbc05, #ea45);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
